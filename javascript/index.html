@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <div class="topnav" id="myTopnav">
+            <a href="#" class="active">Home</a>
+            <a href="#">News</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="#">News</a>
+            <a href="#">Contact</a>
+          
+            <a href="#" class="icon" onclick="responsive_menu()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="wrapper">
+            <div class="boxes">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+    
+        <section id="contact">
+            <div class="wrapper">
+                <div class="contact_wrapper">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.18422795672!2d85.28971169999997!3d27.711597599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199b7886b3e1%3A0x36d3b33a511c7675!2sPizzalaya!5e0!3m2!1sen!2snp!4v1645421624076!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="form">
+                        <h1>Drop a line ....</h1>
+                        <form action="hello.html" novalidate onsubmit="return validate()">
+                            <p>
+                                <label>Name</label>
+                                <input required="" type="text" id="name">
+                                <span id="nameErr"></span>
+                            </p>
+                            <p>
+                                <label>Email</label>
+                                <input required="" type="email" id="email">
+                                <span id="emailErr"></span>
+                            </p>
+                            <p>
+                                <label>Message</label>
+                                <textarea required="" id="message" rows="5"></textarea>
+                                <span id="msgErr"></span>
+                            </p>    
+                            <input type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <script src="demo.js"></script>
+    
+</body>
+</html>
